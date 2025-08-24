@@ -2,6 +2,7 @@
   "name": "xgram-template-default",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {},
   "dependencies": {
     "@xgram/main": "^0.0.1"
