@@ -9,7 +9,7 @@ export default function prettier({cwd, installPackage}) {
         {name: "@trivago/prettier-plugin-sort-imports", type: "dev"},
         {name: "prettier-plugin-unused-imports-configurable", type: "dev"}
     ].map(p => installPackage(p, cwd))
-    fs.copyFileSync(path.join(templateDir, "prettier", ".prettierrc"), cwd);
+    fs.appendFileSync(path.join(cwd, ".prettierrc"), fs.readFileSync(path.join(templateDir, "prettier", ".prettierrc"), "utf-8"))
 
     const packageJsonPath = path.join(cwd, "package.json")
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
