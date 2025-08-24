@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {},
   "dependencies": {
-    "@xgram/main": "^0.0.1"
+    "@xgram/main": "^0.0.1",
+    "dotenv": "^17.2.1"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
