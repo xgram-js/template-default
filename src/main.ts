@@ -6,7 +6,7 @@ async function bootstrap() {
     configDotenv();
     const token = process.env.BOT_TOKEN;
     if (!token) throw new Error("No bot token provided. Check your .env");
-    const bot = BotFactory.create(RootModule, { token: token });
+    const bot = await BotFactory.create(RootModule, { token: token });
 }
 
 void bootstrap();
