@@ -3,13 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "build": "xgram build",
+    "start": "xgram start",
+    "dev": "xgram dev"
+  },
   "dependencies": {
     "@xgram/main": "^0.0.1",
     "dotenv": "^17.2.1"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "@xgram/cli": "^0.0.1",
     "typescript": "^5.9.2"
   }
 }
