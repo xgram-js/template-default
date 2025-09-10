@@ -9,12 +9,12 @@
     "dev": "xgram dev"
   },
   "dependencies": {
-    "@xgram/main": "^0.0.1",
+    "@xgram/main": "^0.0.4",
     "dotenv": "^17.2.1"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
-    "@xgram/cli": "^0.0.2",
+    "@xgram/cli": "^0.0.3",
     "typescript": "^5.9.2"
   }
 }
